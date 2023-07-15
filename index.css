@@ -1,0 +1,174 @@
+
+/* header section design */
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.description{
+    width: 500px;
+}
+
+.header-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.dis-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.dis-info{
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+/* mains setion design  */
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+}
+.team-image img{
+    width: 100%;
+    height: 350px;
+}
+.team-image h3{
+    text-align: center;
+}
+
+.team-image{
+    position: relative;
+}
+.position{
+    position: absolute;
+    right: -70px;
+    top: 20px;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+.position-2, .position-5{
+    right: -70px;
+    top: 125px;
+}
+#img2, #img5{
+    margin-top: 100px;
+}
+
+/* for small screen device like mobile phone */
+
+@media screen and (max-width:576px) {
+    
+    .header{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .description{
+        width: 100%;
+    }
+    
+    .header-title{
+        font-size: 30px;
+    }
+    
+    /* mains section design  */
+    .main{
+        width:90%;
+        margin:0 auto;
+    }
+    .team{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .team-image img{
+        width: 90%;
+        height: 170px;
+    }
+    .team-image h3{
+        font-size: 16px;
+        font-weight: 800;
+    }
+    
+    .team-image{
+        position: relative;
+    }
+    .position{
+        position: absolute;
+        right: -30%;
+        top: 20px;
+        font-size: 16px;
+        transform: rotate(90deg);
+    }
+    #postion-small-d{
+        top: 120px ;
+    }
+      #postion-small-d-4 , #postion-small-d-6{
+        top: 60px;
+    }
+    .img2, .img4, .img6{
+        margin-top: 40px;
+    }
+     #img5{
+        margin: 0px;
+    }
+
+}
+
+
+@media screen and (min-width:576px) and (max-width : 992px) {
+    
+    .header{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .description{
+        width: 100%;
+    }
+    
+    
+    /* mains section design  */
+    .main{
+        width:80%;
+        margin:0 auto;
+    }
+    .team{
+        grid-template-columns: repeat(2,1fr);
+        gap: 80px;
+    }
+    .team-image img{
+        width: 100%;
+        height: 280px;
+    }
+    .team-image h3{
+        font-size: 16px;
+        font-weight: 800;
+    }
+    
+    .team-image{
+        position: relative;
+    }
+    .position{
+        position: absolute;
+        right: -35%;
+        top: 20px;
+        font-size: 20px;
+        transform: rotate(90deg);
+    }
+    #postion-small-d{
+        top: 120px ;
+    }
+      #postion-small-d-4 , #postion-small-d-6{
+        top: 130px;
+    }
+    .img2, .img4, .img6{
+        margin-top: 100px;
+    }
+     #img5{
+        margin: 0px;
+    }
+
+}
